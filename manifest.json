@@ -1,0 +1,7 @@
+{
+  "name": "NerveClasp Homepage",
+  "short_name": "NerveClasp Homepage",
+  "description": "NerveClasp&#39;s Portfolio",
+  "start_url": "/",
+  "display": "standalone"
+}
