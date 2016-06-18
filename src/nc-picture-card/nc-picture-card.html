@@ -1,0 +1,82 @@
+<dom-module id="nc-picture-card" >
+  <template>
+    <style>
+      :host {
+        display: block;
+        width: auto;
+      }
+      img{
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+        width: auto;
+        animation-name: hoveroff;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+
+      }
+      img:hover{
+        animation-name: hoveron;
+        animation-timing-function: ease-in-out;
+        animation-duration: 1s;
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+      }
+
+      @keyframes hoveron {
+        0% {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          /*-webkit-filter: hue-rotate(0deg);*/
+          /*filter: hue-rotate(0deg);*/
+        }
+        100% {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+          /*-webkit-filter: hue-rotate(20deg);*/
+          /*filter: hue-rotate(20deg);*/
+        }
+      }
+      @keyframes hoveroff {
+        0% {
+          -webkit-filter: grayscale(0%);
+          filter: grayscale(0%);
+          /*-webkit-filter: hue-rotate(0deg);*/
+          /*filter: hue-rotate(0deg);*/
+        }
+        25% {
+          -webkit-filter: grayscale(25%);
+          filter: grayscale(25%);
+          /*-webkit-filter: hue-rotate(20deg);
+          filter: hue-rotate(20deg);*/
+        }
+        100% {
+          -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+          /*-webkit-filter: hue-rotate(20deg);*/
+          /*filter: hue-rotate(20deg);*/
+        }
+      }
+    </style>
+    <img class="happy" src="../../img/happy.jpg" />
+  </template>
+  <script>
+    (function (Polymer) {
+      'use strict';
+      class NcPictureCard {
+        beforeRegister() {
+          this.is = 'nc-picture-card';
+
+          this.properties = {
+
+          };
+        }
+
+        attached() {
+        }
+
+      }
+
+      Polymer(NcPictureCard);
+    })(Polymer);
+  </script>
+</dom-module>
