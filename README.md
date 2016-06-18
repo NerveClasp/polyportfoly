@@ -1,6 +1,6 @@
 # \<NerveClasp Homepage\>
 
-NerveClasp&#39;s Portfolio
+Playing with Google's Polymer, learning frontend and making myself something that resembles a portfolio
 
 ## Install the Polymer-CLI
 
